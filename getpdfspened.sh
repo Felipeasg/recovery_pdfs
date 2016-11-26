@@ -16,7 +16,7 @@ do
 
 	for pdf in "${pdffiles[@]}" 
 	do
-		#echo $pdf
+		echo $pdf
 		pdffile=`echo $pdf | grep -Po  '(?<=\/).*(?=pdf)'`
 		echo "/"$pdffile"pdf" >> pdfsopened
 
